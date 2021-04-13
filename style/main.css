@@ -1,0 +1,119 @@
+:root{ /* Definir variáveis dentro do CSSS */
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+
+*{ /* resetar a formatação do html */
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /* limita a largura dos box à borda */
+}
+
+/* Elementos Base */
+
+body { /*formatar o body e todos os filhos não especificados*/
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}
+
+header .container{ /* formatar propriedades da box de navegação do menu */
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
+}
+
+header .logo{ /* definições do logo */
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black' , Times;
+    font-size: 40px;
+}
+
+header nav a{ /* definições propriedades do menu */
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header a:hover{ /* Definir método para passagem do mouse*/
+    color:#fff;
+}
+
+/*Filme principal*/
+
+.filme-principal{ /* Definir características do box*/
+    font-size: 14px; /* Tamanho da fonte*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('capa-house.jpg');
+    /*imagem de background e formatação de linear-gradiente como mascara da imagem*/
+
+    height: 400px; /*tamanho do box*/
+    background-size: cover; /* Tamanho do background - area de cobertura*/
+
+    display: flex; /*coloca os elementos sempre em linha por padrão*/
+    flex-direction: column; /*muda o padrão para coluna*/
+    justify-content: center; /*centraliza os elementos na coluna*/
+    align-items: flex-start; /*elementos começando do início do bloco*/
+}
+
+.filme-principal .descricao{ /*formata o paragrafo class "descricao" da div "filme-principal"*/
+    margin-top: 10px;
+    margin-bottom: 40px; /*coloca marge de 90px abaixo do paragrado class=descricao*/
+    
+}
+
+.filme-principal .titulo { /*formata a class "titulo" da div "filme-principal"*/
+    margin-top: 10%;
+    font-size:40px;
+    
+}
+
+.botao { /*formatar os botoes*/
+    background-color: rgba(0,0,0,.50); /*definir o backgroundos botões como color com transparência (rgba?)*/
+    border:none; /* sem bordas*/
+    color: white; /*cor do conteúdo do botão (fonte)*/
+    
+    padding: 15px 30px; /* define o espaçamento dentro do elemento no sentido horário sendo um só valor para os 4 lados*/
+    margin-right: 15px; /*espaçamento à direita dos botões*/
+    font-size: 12px; /*tamanho da fonte do botão*/
+
+    cursor: pointer; /*altera o cursor para ponteiro quando sobre os botões*/
+    transition: .3s ease all; /*define o tempo de transição de animações (ex.:hover*/
+}
+
+.botao:hover { /*define o que acontece quando o mouse sobre os botões*/
+    background-color:white;
+    color:black;
+}
+
+.botao i{ /*definições para os logos importados do "fontawsome.com"*/
+    margin-right:8px;
+}
+
+/*Todos as CLASS WRAPPER denominadas "CONTAINER"*/
+
+.container { /*definições que afetam TODAs as classes "container" do html*/
+    margin-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}   
+
+/*Somente a CLASS WRAPPER denominada "CONTAINER" da div "filme-principal"*/
+
+.filme-principal .container{ /*definições que só afetam o "container" do box "filme principal
+                            e não afetam o "container" do Header onde estão o titulo e o menu horizontal*/
+    width: 70%;
+    
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}

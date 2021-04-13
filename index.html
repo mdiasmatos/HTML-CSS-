@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--Linkar os arquivos CSS do OWL-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <!-- Responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <title>NETFLIX CLONE</title>
+</head>
+<body>
+    <header>
+        <div class="container"> <!--CLASEE WRAPPER - "container"-->
+            <h2 class ="logo">MARIOFLIX</h2>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header> 
+
+    <main>
+        <div class="filme-principal">
+            <div class="container"> <!-- CLASSE WRAPPER - "container"-->
+                <h3 class="titulo">HOUSE OF CARDS</h3>
+                <p class="descricao">Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.<br>
+                                    Assista agora a nova temporada de House of Cards que está imperdível!
+                </p>
+                <div class="botoes"> <!-- o conteudo da class não segue a formataçao do pai "filme-principal"-->
+                    <button role="button" class="botao"> <!-- Cria o button e especifica sua funcao para responsividade-->
+                        <i class="fas fa-play"></i> <!--icone incorporado do fontawsome.com-->
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i> <!--icone incorporado do fontawsome.com-->
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>           
+        </div>
+    </main>    
+
+    <div class="carrosel-filmes"> <!-- Usando o OWLCarousel como descrito no site demos/basic-->
+        <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img/mini1.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini2.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini3.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini4.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini5.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini6.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini7.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini8.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini9.jpg">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini10.jpg">
+                </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/004591617a.js" crossorigin="anonymous"></script> <!--possibilidade usar fontawsome.com-->
+    <script src="js/owl/jquery.min.js"></script> <!--o jquery tem que ser referenciado antes dos outros scripts-->
+    <script src="js/owl/owl.carousel.min.js"></script>    
+    <script src="js/owl/setup.js"></script>
+    
+</body>
+</html>

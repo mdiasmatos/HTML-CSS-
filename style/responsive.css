@@ -1,0 +1,18 @@
+@media screen and (max-width:700px){ /* Regra apliacada na screen e quando atingir menos de 700px*/
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao{
+        margin-top:5px;
+        width:300px;
+    }
+
+    @media  and (min-width:1000px) {
+        .descricao {
+            width:50%;
+        }
+        
+    }
+}
